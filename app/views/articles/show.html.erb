@@ -8,6 +8,11 @@
   <%= @article.text %>
 </p>
 
+<p>
+  <strong>Category:</strong>
+  <%= link_to @article.category.name, category_path(@article.category) %>
+</p>
+
 <h2>Comments</h2>
 <%= render @article.comments %>
 
